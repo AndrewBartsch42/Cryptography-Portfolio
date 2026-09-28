@@ -1,4 +1,16 @@
 def findGCD(a: int, b:int):
+    """
+        Function: Calculates the GCD of a and b
+        Returns:
+            a = gcd of b and a
+        Mathmatics:
+            Uses Euclids algorithm by recursion. 
+            take any a and b where a > b 
+            then set a = to a mod b 
+            repeat until b is zero 
+            then a will be the gcd of a and b
+    
+    """
     #force positive numbers
     a = abs(a)
     b = abs(b)
