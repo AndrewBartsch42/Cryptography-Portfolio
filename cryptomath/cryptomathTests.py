@@ -1,6 +1,6 @@
 import unittest
 from gcd import findGCD
-
+from exgcd import findExGCD
 
 #test cases for base gcd function
 #test case 1: tests for two positive numbers
@@ -11,6 +11,10 @@ class gcdTest(unittest.TestCase):
         self.assertEqual(findGCD(4883,4369), 257)
     def test_gcd_neg(self):
         self.assertEqual(findGCD(-4883,-4369), 257)
+
+class exgcdTest(unittest.TestCase):
+    def test_exgcd(self):
+        self.assertEqual(findExGCD(35, 15), (5, 1, -2))
 
 
 unittest.main()
